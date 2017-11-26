@@ -9,7 +9,7 @@ function emailChange(){
     if(radYes.checked){
 
         document.getElementById('user_email').style.visibility = "hidden";
-        alert("no");
+        document.getElementById('label_email').style.visibility = "hidden";
 
 
     }
@@ -17,7 +17,7 @@ function emailChange(){
     else if(radNo.checked)
     {
         document.getElementById('user_email').style.visibility = "visible";
-        alert("yes");
+        document.getElementById('label_email').style.visibility = "visible";
     }
 
 
