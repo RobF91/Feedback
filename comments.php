@@ -3,7 +3,6 @@
  * Created by IntelliJ IDEA.
  * User: fieldr6
  * Date: 16/11/2017
- * Time: 10:39
  */
 
 
