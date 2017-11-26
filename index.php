@@ -90,19 +90,22 @@ $ip=$_SERVER['REMOTE_ADDR'];
 
                 <br> <br>
                 <label style="margin-left:5%;">Anonymous Feedback?</label>
-                <input type="radio" class="anon_feedback" id="not_anonymous" name="anon" value="yes" onclick="emailChange()">Yes
-                <input type="radio" class="anon_feedback" id="anonymous" name="anon" value="no" onclick="emailChange()">No
+                <input type="radio" class="anon_feedback" id="anonymous" name="anon" value="yes" onclick="emailChange()">Yes
+                <input type="radio" class="anon_feedback" id="not_anonymous" name="anon" value="no" onclick="emailChange()">No
 
                 <br><br>
 
                 <label style="margin-left:5%;"  id="label_email" display: none>Your Email</label>
-                <input type="email" id="user_email" name="email" style="width:50%; margin-left:0%; "display: none;>
+                <input type="email" id="user_email" name="email" style="width:50%; margin-left:0%;" type="hidden">
 
                 <br><br>
 
                 <button  type="submit" id="Submit_Request" style="height:; width:; margin-left:45%; text-align:center;">
                     Submit
                 </button>
+
+
+                <input id="load" value="<?= $ip ?>" type="hidden">
 
 
                 <br><br>
@@ -115,7 +118,7 @@ $ip=$_SERVER['REMOTE_ADDR'];
         </div>
         <br>
         <div style="text-align:center;">
-            Copyright © James Nyhan
+            Copyright © Robert Field
         </div>
     </div>
 
