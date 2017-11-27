@@ -36,5 +36,10 @@ function checkTarget() {
 
 }
 
+function btnClickPop(){
+
+    document.getElementById("confirmPop").style.display = "visible";
+}
+
 
 

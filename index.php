@@ -18,6 +18,7 @@ $ip=$_SERVER['REMOTE_ADDR'];
 
     emailChange();
     checkTarget();
+    btnClickPop();
 
 </script>
 
@@ -86,7 +87,7 @@ $ip=$_SERVER['REMOTE_ADDR'];
 
                 <label style="margin-left:5%;">Additional Information</label><br>
                 <textarea maxlength="1500" id="additional_info" name="add_info" cols="40" rows="5" placeholder="Please enter your feedback up to 1500 characters long." style="margin-left:25%; width:70%; height:30%; resize: none;" required
-                          style="color:#BBB;" ></textarea>
+                          style="color:#BBB;" onkeydown="if (event.keyCode == 13) document.getElementById('Submit_Request').click()"></textarea>
 
                 <br> <br>
                 <label style="margin-left:5%;">Anonymous Feedback?</label>
@@ -95,12 +96,17 @@ $ip=$_SERVER['REMOTE_ADDR'];
 
                 <br><br>
 
+                <div id="confirmPop" style="display: none;">
+                    <span id="spanPopUp"></span>
+                </div>
+
                 <label style="margin-left:5%;"  id="label_email" display: none>Your Email</label>
-                <input type="email" id="user_email" name="email" style="width:50%; margin-left:0%;" type="hidden">
+                <input type="email" id="user_email" name="email" style="width:50%; margin-left:0%;" type="hidden" onkeydown="if (event.keyCode == 13)
+                    document.getElementById('Submit_Request').click()">
 
                 <br><br>
 
-                <button  type="submit" id="Submit_Request" style="height:; width:; margin-left:45%; text-align:center;">
+                <button  type="submit" id="Submit_Request" style="height:; width:; margin-left:45%; text-align:center;" onclick="btnClickPop()">
                     Submit
                 </button>
 
@@ -129,4 +135,6 @@ $ip=$_SERVER['REMOTE_ADDR'];
 </body>
 
 </html>
+
+
 
