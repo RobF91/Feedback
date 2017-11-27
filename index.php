@@ -1,5 +1,7 @@
 <html xmlns:display="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 
+<link rel="stylesheet" type="text/css" href="style.css" />
+
 <body>
 <?php
 include_once ('indexPhp.php');
@@ -95,9 +97,13 @@ $ip=$_SERVER['REMOTE_ADDR'];
                 <input type="radio" class="anon_feedback" id="not_anonymous" name="anon" value="no" onclick="emailChange()">No
 
                 <br><br>
+                <div id="modalConfirm" class="modal">
 
-                <div id="confirmPop" style="display: none;">
-                    <span id="spanPopUp"></span>
+                <div class="modal-content" id="confirmPop">
+                    <span class="close" id="spanPopUp">&times;</span>
+                    <p>Some Text....</p>
+                </div>
+
                 </div>
 
                 <label style="margin-left:5%;"  id="label_email" display: none>Your Email</label>
