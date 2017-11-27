@@ -1,4 +1,6 @@
 
+
+
 function emailChange(){
 
     var radYes = document.getElementById('anonymous');
@@ -38,7 +40,19 @@ function checkTarget() {
 
 function btnClickPop(){
 
-    document.getElementById("confirmPop").style.display = "visible";
+    var addInfo = document.getElementById('additional_info').value;
+
+    if(addInfo != "") {
+
+        document.getElementById("modalConfirm").style.display = "block";
+
+    }
+}
+
+function clickDestroy() {
+
+    document.getElementById("modalConfirm").style.display = "none";
+
 }
 
 
