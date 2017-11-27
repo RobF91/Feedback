@@ -1,19 +1,29 @@
 <?php
+//require 'index.php';
 
-$username = "root";
-$password = "FeEdBaCk";
-$hostname = "10.73.52.41";
-$dbname = "feedback";
+function Connection()
+{
+    $username = "root";
+    $password = "FeEdBaCk";
+    $hostname = "localhost";
+    $dbname = "feedback";
 
-//connection to the database
-$db_handle = new mysqli($hostname, $username, $password)
-or die("Unable to connect to MySQL");
+// Create connection
+    $conn = new mysqli($hostname, $username, $password, $dbname);
 
-//select a database to work with
-$selected = new mysqli("feedback",$db_handle)
-or die("Could not select examples");
+// Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+
+        return $conn;
+    }
+
+    //$_POST['Target'];
 
 
-//$sql = "INSERT INTO feedback (id) VALUE (1)";
+    $conn->query("INSERT INTO `feedback`(`target`) VALUES (1)");
+
+}
+
 
 ?>

@@ -4,15 +4,13 @@
 
 <body>
 <?php
-include_once ('indexPhp.php');
-include_once ('connect.php');
+require 'connect.php';
 
 //Ip address
 $ip=$_SERVER['REMOTE_ADDR'];
 //echo "IP address= $ip"
 
-
-//query("INSERT INTO feedback(info) VALUE (d)");
+Connection();
 
 ?>
 
