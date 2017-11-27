@@ -86,9 +86,12 @@ Connection();
 
             <br><br>
 
+            <!--Pressing enter in email box or additional info box
+            clicks submit button-->
+
             <label style="margin-left:5%;">Additional Information</label><br>
-            <textarea maxlength="1500" id="additional_info" name="add_info" cols="40" rows="5" placeholder="Please enter your feedback up to 1500 characters long." style="margin-left:25%; width:70%; height:30%; resize: none;" required
-                      style="color:#BBB;" onkeydown="if (event.keyCode == 13) document.getElementById('Submit_Request').click()"></textarea>
+            <textarea maxlength="1500" id="additional_info" name="add_info" cols="20" rows="5" placeholder="Please enter your feedback up to 1500 characters long." style="margin-left:25%; width:70%; height:30%; resize: none;" required
+                      style="color:#BBB;"  onkeydown="if (event.keyCode == 13) document.getElementById('Submit_Request').click()"></textarea>
 
         </div>
 
@@ -135,17 +138,15 @@ Connection();
 
             <h3 style="background: #0000ff; height:21px; text-align:center; border-bottom-left-radius:25px; border-bottom-right-radius:25px;"></h3>
 
-
+        </div>
 </form>
 
-</div>
+
         <br>
         <div style="text-align:center;">
             Copyright © Robert Field
         </div>
-    </div>
 
-</div>
 
 </form>
 

@@ -17,28 +17,9 @@ $id_query = "SELECT * FROM feedback WHERE id";
 <html>
 <head>
     <title>Feedback Suggestions</title>
-    <link type="text/css" href="/javascript/jquery-tablesorter/themes/blue/style.css" rel="stylesheet" />
+    <link type="text/css" href="/javascript/jquery-tablesorter/themes/blue/style.css" rel="style.css" />
     <style>
-        .title {font-size:40px; vertical-align: top}
-        .dialogTitle { font-size:30px  }
-        #addIssueDialog {
-            position: fixed;
-            display: none;
-            left: 20%;
-            right: 20%;
-            top: 15%;
-            /*bottom: 15%; */
-            z-index: 1000001;
-            margin: 0 0 0 0;
-            background: white;
-            color: #444;
-            font-size: 15px;
-            text-align: center;
-            border: solid rgb(75,136,205);
-            padding: 0.5em 1em 0.5em 1.5em;
-            box-shadow: 0 1px 3px black;
-            border-radius: 1em 1em 1em 1em;
-        }
+
         table tr td.owned { background-color: #dfffc6}
         table tr td.geo { background-color: #ffdbc6}
         table tr td.accept { background-color: #8eff85}

@@ -18,9 +18,8 @@ function Connection()
         return $conn;
     }
 
-    //$_POST['Target'];
 
-
+    //Test entry value
     $conn->query("INSERT INTO `feedback`(`target`) VALUES (1)");
 
 }
