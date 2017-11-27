@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9339137a-d2cb-4edd-9369-a752fda64d21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homePageScript.js" afterPath="$PROJECT_DIR$/homePageScript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -611,7 +607,7 @@
       <workItem from="1510927555630" duration="1192000" />
       <workItem from="1510930269307" duration="83000" />
       <workItem from="1510930382224" duration="4784000" />
-      <workItem from="1511722379921" duration="9621000" />
+      <workItem from="1511722379921" duration="9632000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1511728181543</created>
@@ -641,11 +637,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511736025176</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Email box fix">
+      <created>1511741966395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511741966395</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31384000" />
+    <option name="totallyTimeSpent" value="31395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
